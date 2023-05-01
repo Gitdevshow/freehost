@@ -1,0 +1,82 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Alkatra:wght@500&family=Poppins:wght@200;300;400;500;600&family=Roboto+Slab&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Alkatra', cursive;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(./img/hill.jpg);
+    height: 100vh;
+    width: 100%;
+    background-repeat: no-repeat;
+    
+    
+}
+form{
+    color: rgb(88, 90, 214);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    padding: 10px 30px 30px 50px;
+    transform: translate(-50%, -50%);
+    background: rgba(0,0,0,.7);
+    box-sizing: border-box;
+    box-shadow: 0 15px 25px rgba(0,0,0,.6);
+    border-radius: 10px;
+    
+    
+}
+h2{
+    text-align: center;
+    padding: 20px;
+    
+}
+form label{
+    font-size: 17px;
+}
+input{
+    text-align: lef;
+    background-color: transparent;
+    outline: none;
+    border: 1px solid rgb(13, 13, 29);
+    width: 100%;
+    border-radius: 5px;
+    font-size: 14px;
+    padding: 5px;
+    color: aliceblue;
+    
+    
+}
+form input:focus{
+    outline: 0;
+    border-color: #0ad4e2;
+}
+
+.btn {
+    text-align: center;
+    text-transform: uppercase;
+    padding: 5px 5px;
+    background-color: transparent;
+    border: 1px solid rgb(88, 90, 214);
+    transition: all 1s ease;
+    cursor: pointer;
+    border-radius: 10px;
+    color: rgb(88, 90, 214);
+    width: 100px;
+}
+form .btn:hover{
+    background: linear-gradient(to right, #5311a8 , #03353d);
+}
+a{
+    
+    margin: 10px;
+    color: #0ad4e2;
+}

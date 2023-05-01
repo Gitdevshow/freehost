@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Registration and Login Form</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="./links/Style.css">
+</head>
+<body>
+  <div class="container">
+ 
+  <form id="registration-form" action="null.html">
+    <div><h2> Registration Form </h2></div>
+  <div class="form-controle">
+    <label for="username">Username:</label>
+    <input type="text" id="username" name="username" required placeholder="Enter your username" autocomplete="off">
+    
+    <br><br>
+  </div>
+
+  <div class="form-controle"><label for="email">Email:</label>
+    <input type="email" id="email" name="email" required placeholder="Enter your email" autocomplete="off">
+    
+    <br><br>
+  </div>
+
+  <div class="form-controle"><label for="password">Password:</label>
+    <input type="password" id="password" name="password" required placeholder="Enter your password" autocomplete="off">
+   
+    <br><br>
+  </div>
+    <div>
+      <button class="btn" type="submit">Register</button>
+    </div>
+    <a href="login.html">Login Here!</a>
+  </form>
+</div>
+
+  
+
+  <script>
+    const registrationForm = document.getElementById("registration-form");
+   
+
+    registrationForm.addEventListener("submit", function(event) {
+      event.preventDefault();
+      const username = document.getElementById("username").value;
+      const email = document.getElementById("email").value;
+      const password = document.getElementById("password").value;
+      console.log("Registration Form Data: ", { username, email, password });
+      registrationForm.reset();
+    });
+
+    
+  </script>
+
+</body>
+</html>

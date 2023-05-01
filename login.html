@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./links/login.css">
+</head>
+<body>
+    <div class="container">
+    
+  <form id="login-form">
+    <h2>Login Form</h2>
+    <div>
+    <label for="username">Username:</label>
+    <input type="text" id="username" name="username" required placeholder="Enter username" autocomplete="off"><br><br>
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password" required placeholder="Enter password" autocomplete="off"><br><br>
+    <button class="btn"type="submit">Login</button>
+    
+    </div>
+    <div><a href="index.html">Registration Here!</a></div>
+    
+  </form>
+  <script>
+    const loginForm = document.getElementById("login-form");
+
+    loginForm.addEventListener("submit", function(event) {
+        event.preventDefault();
+        const username = document.getElementById("username").value;
+        const password = document.getElementById("password").value;
+        console.log("Login Form Data: ", { username, password });
+        loginForm.reset();
+      });
+  </script>
+</div>
+</body>
+</html>
